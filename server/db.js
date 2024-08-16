@@ -4,7 +4,7 @@ const app = express();
 const port = process.env.PORT || 5000;
 
 // Replace these with your MongoDB Atlas connection details
-const uri = 'mongodb+srv://<username>:<password>@cluster.mongodb.net/<databaseName>?retryWrites=true&w=majority';
+const uri = 'mongodb+srv://User123:Pass@123@cluster0.1zmwd.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0';
 
 const client = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology: true });
 

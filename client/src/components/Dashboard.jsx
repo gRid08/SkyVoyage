@@ -24,11 +24,10 @@ export default function DashboardPage(){
     },[])
 
     useEffect(() => {
-        // Fetch the data from your backend API or use the sample data here
-        // Replace this with your actual API endpoint or fetch logic
+        
         const fetchData = async () => {
           try {
-            const response = await fetch('http://localhost:8000/api/booking'); // Replace with your actual API endpoint
+            const response = await fetch('http://localhost:8000/api/booking'); 
             if (response.ok) {
               const data = await response.json();
               setFlightData(data);

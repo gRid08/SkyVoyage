@@ -7,8 +7,8 @@ app.use(express.json());
 const { MongoClient } = require('mongodb');
 
 const amadeus = new Amadeus({
-  clientId: 'ZpWs6GEqzuHYlGRvJSsvImwWAIHRFe0I',
-  clientSecret: 'CrcocCa2pgaGFzxl'
+  clientId: 'xUWTRqx1ZBGGrlqzVVFGfABf0AXZenAY',
+  clientSecret: 'VrygFrTRkEP50oQ6'
 });
 
 app.get("/api/flights", async (req, res) => {
@@ -42,7 +42,7 @@ app.get("/api/flights", async (req, res) => {
   }
 });
 
-const uri = 'mongodb+srv://iampragathish:flightbooking@cluster0.irx6cnh.mongodb.net/?retryWrites=true&w=majority';
+const uri = 'mongodb+srv://User123:Pass@123@cluster0.1zmwd.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0';
 
 const client = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology: true });
 
@@ -58,7 +58,7 @@ async function start() {
 //db call
 start();
 
-//bookings 
+//bookings
 app.post('/api/booking', async (req, res) => {
   try {
     const bookingData = req.body;

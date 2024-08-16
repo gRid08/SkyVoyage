@@ -33,7 +33,7 @@ function Footer() {
         </div>
       </div>
       <div className="section__container footer__bar">
-        <p>Copyright © 2023 Web Design Mastery. All rights reserved.</p>
+        <p>Copyright © 2024 skyVoyage. All rights reserved.</p>
         <div className="socials">
           <span><i className="ri-facebook-fill"></i></span>
           <span><i className="ri-twitter-fill"></i></span>

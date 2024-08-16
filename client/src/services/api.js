@@ -12,16 +12,16 @@ const LOGIN_URL = `/accounts:signInWithPassword?key=${API_KEY}`;
 const USER_DETAILS_URL = `/accounts:lookup?key=${API_KEY}`;
 
 const firebaseConfig = {
-    apiKey: "AIzaSyDOAIpSKqsbsTFRdhb09uMo4_hkgQ7KJYQ",
-    authDomain: "flight-booking-4d804.firebaseapp.com",
-    databaseURL:"https://flight-booking-4d804-default-rtdb.firebaseio.com",
-    projectId: "flight-booking-4d804",
-    storageBucket: "flight-booking-4d804.appspot.com",
-    messagingSenderId: "749628065648",
-    appId: "1:749628065648:web:eb63f2d52f0170cbbbb1b5",
-    measurementId: "G-NZ4C9N5573"
-  };
-  
+  apiKey: "AIzaSyAD7qa3AqBki3WfS0M0EV68oggCJgTKYNo",
+  authDomain: "skyvoyage-67541.firebaseapp.com",
+  databaseURL: "https://skyvoyage-67541-default-rtdb.firebaseio.com",
+  projectId: "skyvoyage-67541",
+  storageBucket: "skyvoyage-67541.appspot.com",
+  messagingSenderId: "848831090716",
+  appId: "1:848831090716:web:3dbe296b252c30a426cfd9",
+  measurementId: "G-DEWJ9FE4F0"
+};
+
 
 export const RegisterApi = (inputs)=>{
     let data  = {displayName:inputs.name,email:inputs.email,password:inputs.password }
@@ -35,7 +35,10 @@ export const UserDetailsApi = ()=>{
     let data = {idToken:getUserData()}
     return axios.post(USER_DETAILS_URL,data)
 }
+
 const app = initializeApp(firebaseConfig);
-// Export the Firebase database instance
 export const database = getDatabase(app);
+export const firestore = getFirestore(app);
 export { app };
+// Export the Firebase database instance
+
